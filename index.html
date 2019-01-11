@@ -1,0 +1,89 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <title>Sign Up | SocialApe</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Sgin Up</h1>
+      <div class="row">
+        <form class="col s6" id="myForm" novalidate>
+          <div class="row">
+            <div class="input-field col s6">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="First Name"
+                id="firstName"
+                onfocusout="validateFirstName()"
+              />
+              <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s6">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                name="Last Name"
+                id="lastName"
+                onfocusout="validateLastName()"
+              />
+              <span class="helper-text"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="Password"
+                id="password"
+                onfocusout="validatePassword()"
+              />
+              <span class="helper-text"></span>
+            </div>
+            <div class="input-field col s6">
+              <label for="confirmPassword">Confirm Password</label>
+              <input
+                type="password"
+                name="Confirm Password"
+                id="confirmPassword"
+                onfocusout="validateConfirmPassword()"
+              />
+              <span class="helper-text"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="Email"
+                id="email"
+                onfocusout="validateEmail()"
+              />
+              <span class="helper-text"></span>
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit">
+            SignUp
+          </button>
+        </form>
+        <div class="col s6">
+          <img
+            src="https://cdn.pixabay.com/photo/2018/01/15/07/51/woman-3083376_960_720.jpg"
+            style="width: 100%; border-radius: 6px; opacity: 0.85;"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
